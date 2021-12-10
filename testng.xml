@@ -3,9 +3,8 @@
 <suite name="Automation_Test" verbose="1" parallel="classes" >
     <test name="api_test" >
         <classes>
-            <class name="Selenium_Grid.SeleniumGrid_Chrome2" ></class>
-            <class name="Selenium_Grid.SeleniumGrid_Chrome1" ></class>
-            <class name="Selenium_Grid.SeleniumGrid_FireFox1"></class>
+            <class name="automation_test.Mortgage_Calculator.MyMortgageCalculate" ></class>
+            <class name="automation_test.Mortgage_Calculator.RealAPRCalculator"></class>
         </classes>
     </test>
 </suite>

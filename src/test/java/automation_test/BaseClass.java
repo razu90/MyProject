@@ -9,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import utilities.DriverFactory;
-import utilities.ReadConfigFiles;
+
 
 public class BaseClass {
     public WebDriver driver;
@@ -25,10 +25,8 @@ public class BaseClass {
 
     @BeforeMethod
     public void browserInitialization() {
-        String browserUrl = ReadConfigFiles.getPropertyValues("Url");
         LOGGER.info(tesstCaseName);
-        LOGGER.debug("Opening the URL: "+ browserUrl);
-        Action.browserActions(driver).openBrowser(browserUrl);
+        Action.browserActions(driver).openBrowser("https://www.mortgagecalculator.org/");
     }
 
     @AfterMethod

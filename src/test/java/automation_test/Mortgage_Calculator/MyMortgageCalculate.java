@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 import page_objects.NavigationBar;
 
 public class MyMortgageCalculate extends BaseClass {
-
-
     @Test(invocationCount = 1)
     public void calculateRate() {
         new NavigationBar(driver)
