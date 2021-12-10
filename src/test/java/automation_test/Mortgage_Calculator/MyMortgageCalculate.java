@@ -1,25 +1,13 @@
 package automation_test.Mortgage_Calculator;
 
-import command_providers.Action;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import automation_test.BaseClass;
 import org.testng.annotations.Test;
 import page_objects.NavigationBar;
-public class MyMortgageCalculate {
 
-    WebDriver driver;
+public class MyMortgageCalculate extends BaseClass {
 
-    @BeforeMethod
-    public void openBrowser() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        Action.browserActions(driver).openBrowser("https://www.mortgagecalculator.org/");
-    }
 
-    @Test (invocationCount = 1)
+    @Test(invocationCount = 1)
     public void calculateRate() {
         new NavigationBar(driver)
                 .navigateToHome()
@@ -42,8 +30,4 @@ public class MyMortgageCalculate {
 
     }
 
-    @AfterMethod
-    public void closeBrowser() {
-        Action.browserActions(driver).closeBrowser();
-    }
 }
