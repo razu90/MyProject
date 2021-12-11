@@ -1,0 +1,1 @@
+{"uuid":"ee3d02a2-bd23-455a-9697-0d0cc81e258e","name":"automation_test.QA_Tek.qaTek","children":["e436c8af-ad81-45a0-9611-078068ee9edc"],"befores":[{"name":"addThread","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1639191342904,"stop":1639191344625}],"afters":[],"start":1639191342888,"stop":1639191347900}

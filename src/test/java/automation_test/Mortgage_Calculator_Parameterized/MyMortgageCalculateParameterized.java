@@ -28,7 +28,6 @@ public class MyMortgageCalculateParameterized {
 
         String browserUrl = ReadConfigFiles.getPropertyValues("Url");
         Action.browserActions(driver).openBrowser(browserUrl);
-
     }
 
     @Test (invocationCount = 1)

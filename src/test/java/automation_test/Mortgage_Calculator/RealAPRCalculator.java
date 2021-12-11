@@ -5,9 +5,6 @@ import page_objects.NavigationBar;
 
 
 public class RealAPRCalculator extends BaseClass {
-
-
-
     @Test
     public void CalculateRealAPR() {
         new NavigationBar(driver)

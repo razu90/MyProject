@@ -1,18 +1,18 @@
 package automation_test.QA_Tek;
 
+import automation_test.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import utilities.DriverFactory;
 
-public class qaTek {
-    WebDriver driver;
+public class qaTek extends BaseClass {
     @BeforeMethod
     public void OpenBrowser() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriver driver = DriverFactory.getInstance().getDriver();
         driver.get("https://qateksolutions-lms.com/all-courses");
     }
     @Test
